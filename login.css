@@ -1,15 +1,17 @@
 body{
-    background: url(https://i.pinimg.com/originals/8e/c2/88/8ec288ab77ed3d8a02a237f0cb3f1528.jpg);
+    background: url(https://wallpapercave.com/wp/wp4755737.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 .form-group label{
+    color: rgb(223, 232, 240);
     font-weight: 500;
     font-style: oblique;
 }
 
 .form-group input{
+    color:black;
     padding: 6px 10px;
     font-weight: 200;
     font-style: italic;
