@@ -1,5 +1,16 @@
 body{
     background: url(https://i.pinimg.com/originals/8e/c2/88/8ec288ab77ed3d8a02a237f0cb3f1528.jpg);
-    height: 1000%;
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+.form-group label{
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.form-group input{
+    padding: 6px 10px;
+    font-weight: 200;
+    font-style: italic;
 }
