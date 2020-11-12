@@ -4,6 +4,10 @@ body{
     background-size: cover;
     
 }
+
+.container{
+    padding-top:70px ;
+}
 .form-group label{
     color: rgb(223, 232, 240);
     font-weight: 500;
