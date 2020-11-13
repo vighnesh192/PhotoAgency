@@ -4,7 +4,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 .container{
-    padding-top: 70px; 
+    padding-top: 100px; 
 }
 .form-group label{
     font-weight: 500;
@@ -18,4 +18,14 @@ p{
     padding: 6px 10px;
     font-weight: 200;
     font-style: italic;
+}
+
+#exampleInputMobileNumber {
+    display: inline;
+    /* display: flex; */
+    width: 44.6%;
+}
+
+.form-check label{
+    color: white;
 }
