@@ -8,7 +8,6 @@ background-size: cover;
 }
 .form-group label{
     font-weight: 500;
-    font-style: oblique;
 }
 p{
     color: rgb(41, 39, 39);
@@ -17,7 +16,6 @@ p{
 .form-group input{
     padding: 6px 10px;
     font-weight: 200;
-    font-style: italic;
 }
 
 #exampleInputMobileNumber {

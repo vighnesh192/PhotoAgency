@@ -11,12 +11,10 @@ body{
 .form-group label{
     color: rgb(223, 232, 240);
     font-weight: 500;
-    font-style: oblique;
 }
 
 .form-group input{
     color:black;
     padding: 6px 10px;
     font-weight: 200;
-    font-style: italic;
 }
