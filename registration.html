@@ -38,28 +38,35 @@
   </header>
   
   <div class="container">
-    <form>
+    <form class="needs-validation" novalidate>
       <div class="form-group">
         <div class="row">
           <div class="col">
             <label for="firstname">First Name</label>
-
-            <input id="firstname" type="text" class="form-control" placeholder="First name">
+            <input id="firstname" type="text" class="form-control" placeholder="First name" required>
+            <div class="invalid-feedback">
+              Please enter your first name.
+            </div>
           </div>
           <div class="col">
             <label for="lastname">Last Name</label>
-            <input id="lastname" type="text" class="form-control" placeholder="Last name">
+            <input id="lastname" type="text" class="form-control" placeholder="Last name" required>
+            <div class="invalid-feedback">
+              Please enter your last name.
+            </div>
           </div>
         </div>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted"><p>We'll never share your email with anyone else.</p></small>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email" aria-describedby="emailHelp" required>
+        <div class="invalid-feedback">
+          Please enter your email id.
+        </div>
       </div>
       <div class="form-group">
         <label for="exampleInputMobileNumber">Contact No.</label>
-        <select id="exampleInputMobileNumber" class="form-control">
+        <select id="exampleInputMobileNumberCountryCode" class="form-control custom-select">
           <option selected>+91</option>
           <option>+01</option>
           <option>+45</option>
@@ -74,15 +81,42 @@
           <option>+32</option>
           <option>+52</option>
         </select>
-        <input type="tel" class="form-control" id="exampleInputMobileNumber" placeholder="Phone no" >
+        <input type="tel" class="form-control" id="exampleInputMobileNumber" placeholder="Phone no" required>
+        <div class="invalid-feedback">
+          Please enter your phone no.
+        </div>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" required>
+        <div class="invalid-feedback">
+          Please enter a password.
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
