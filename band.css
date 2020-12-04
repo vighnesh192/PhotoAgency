@@ -54,7 +54,9 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
   }
-  
+  .col-md-5 img{
+    margin-top: 30%;
+  }
   
   /* Featurettes
   ------------------------- */
